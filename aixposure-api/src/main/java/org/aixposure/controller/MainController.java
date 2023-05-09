@@ -85,4 +85,10 @@ public class MainController {
         }
         return 1;
     }
+
+    @GetMapping("/findArticle/{id}")
+    @CrossOrigin
+    public Article findById(@PathVariable Integer id ){
+        return articleJPA.findById(id).get();
+    }
 }
