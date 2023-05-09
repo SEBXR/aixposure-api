@@ -75,8 +75,7 @@ public class MainController {
     @CrossOrigin
     public Integer modify(Integer id, String title, String content) {
         Article at = articleJPA.findById(id).get();
-        if (title.length() != 0)
-            at.setTitle(title);
+        at.setTitle(title);
         at.setContent(content);
         try {
             articleJPA.save(at);
