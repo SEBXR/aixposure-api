@@ -19,6 +19,6 @@ public class AixposureApiApplication {
 
 	@GetMapping("/")
 	public String index() {
-		return "HELLO MY BOY , IT'S DUCKING WORK !";
+		return "HELLO , IT'S DUCKING WORK !";
 	}
 }
