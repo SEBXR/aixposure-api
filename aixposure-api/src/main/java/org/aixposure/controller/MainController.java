@@ -36,7 +36,7 @@ public class MainController {
 
     @GetMapping("/articles")
     @CrossOrigin
-    @Cacheable("articles")
+    @Cacheable("listArticle")
     public List<Article> findAllArticle() {
         return articleJPA.findAll();
     }
